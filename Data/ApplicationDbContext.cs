@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Roadmap.Models;
 
 namespace Roadmap.Data
 {
@@ -9,5 +10,6 @@ namespace Roadmap.Data
             : base(options)
         {
         }
+        public DbSet<Roadmap.Models.User> User { get; set; }
     }
 }
