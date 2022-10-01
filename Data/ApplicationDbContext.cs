@@ -11,5 +11,6 @@ namespace Roadmap.Data
         {
         }
         public DbSet<Roadmap.Models.User> User { get; set; }
+        public DbSet<Roadmap.Models.Event> Event { get; set; }
     }
 }
